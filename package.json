@@ -1,0 +1,44 @@
+{
+  "name": "dc-team6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yk-hts/dc-team6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yk-hts/dc-team6/issues"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-pdf": "^4.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "homepage": "https://yk-hts.github.io/dc-team6/",
+  "devDependencies": {
+    "react-scripts": "^3.4.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
