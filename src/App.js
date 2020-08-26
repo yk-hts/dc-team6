@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -57,13 +57,13 @@ const RPG = () => {
       <div className="content">
         <ul>
           <li>
-            <a href="https://drive.google.com/file/d/1VrWTPNvnuOIKnZtSVnqDIq7O6qWwe1dV/view?usp=sharing" target="_blank">最終レポート</a>
+            <a href="./main_.pdf" target="_blank">最終レポート</a>
           </li>
           <li>
             <a href="https://github.com/yk-hts/dc-team6" target="_blank">ゲームのダウンロード</a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1gCUNS7Jd2GjmRfhx8Axq6P0lz1Vfajm8/view?usp=sharing" target="_blank">ポスター</a>
+            <a href="./poster.pdf" target="_blank">ポスター</a>
           </li>
         </ul>
       </div>
@@ -84,22 +84,22 @@ const DetailsGame = () => {
           <p>
             画面にボールでてきて番号の小さい順にクリックしていき制限時間内にクリアを目指すゲームです。levelが3つに分かれていてそれぞれボールの数が10,20,30制限時間が15秒,30秒,45秒となります。この制限時間内にすべてのボールを順番でクリックすることが目標となります。制限時間をオーバーしてしまうとき以外にも5回連続で順番とは違う番号のボールをクリックしてしまったときもゲームオーバーとなります。
           </p>
-          <a href="https://drive.google.com/file/d/1crRKwyJTOvxbU8aS07Fl-PAnCKdFkL1B/view?usp=sharing" target="_blank">仕様書へのリンク</a>
+          <a href="./game1.pdf" target="_blank" >仕様書へのリンク</a>
         </div>
       </div>
       <div className="section">
-        <h2 className="is-size-5">2つ目のゲーム</h2> 
+        <h2 className="is-size-5">2つ目のゲーム</h2>
         <p>
-          クリックするとランダムな方向に動いていくボールがあります。そのまま何もしないと画面の外にボールが出ていってしまうのでボールをクリックし別の方向に動かせることで画面の外にでることを防ぐゲームです。三段階のレベルがありレベル2が1に比べてボールの動く速度が早くなっていて、レベル3ではボールの数が2つになります。
+          クリックするとランダムな方向に動いていくボールがあります。そのまま何もしないと画面の外にボールが出ていってしまうので、ボールをクリックし別の方向に動かせることで画面の外にでることを防ぐゲームです。三段階のレベルがありレベル2が1に比べてボールの動く速度が早くなっていて、レベル3ではボールの数が2つになります。
         </p>
-        <a href="https://drive.google.com/file/d/11ZaAPr1-1u1vaX-Yss1q8dREk85OBrtY/view?usp=sharing" target="_blank">仕様書へのリンク</a>
+        <a href="./game2.pdf" target="_blank">仕様書へのリンク</a>
       </div>
       <div className="section">
         <h2 className="is-size-5">3つ目のゲーム</h2>
         <p>
           左側にあるボールはクリックをすることでジャンプをしますこのジャンプは二段ジャンプまでできるようになっています、画面の右側から障害物が出て迫ってくるのでそれをよけていきハイスコアを目指していくというゲームです。レベルが二段階かわるようになっていて障害物が迫ってくる速度が早くなります
         </p>
-        <a href="https://drive.google.com/file/d/1f7I5W9B-ReRiGOI9ERLX82y3R5QogE0J/view?usp=sharing" target="_blank">仕様書へのリンク</a>
+        <a href="./game3.pdf" target="_blank">仕様書へのリンク</a>
       </div>
     </div>
   );
@@ -108,7 +108,7 @@ const DetailsGame = () => {
 const App = () => {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <Header />
         <div className="section">
           <div className="container">
@@ -120,7 +120,7 @@ const App = () => {
             </Switch>
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };
